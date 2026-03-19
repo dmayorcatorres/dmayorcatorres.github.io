@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dagoberto Mayorca Torres | Computational Cardiology & Biomedical AI</title>
+  <meta name="description" content="Dagoberto Mayorca Torres is a researcher in computational cardiology, biomedical AI, ECGI, inverse problems, and cardiac signal reconstruction." />
+  <style>
+    :root{
+      --bg:#0b1220;
+      --panel:#111a2e;
+      --soft:#1a2745;
+      --text:#e8eefc;
+      --muted:#a8b4d1;
+      --accent:#76a9ff;
+      --line:#223154;
+      --white:#ffffff;
+      --max:1100px;
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{
+      margin:0;
+      font-family:Arial, Helvetica, sans-serif;
+      background:linear-gradient(180deg,#0b1220 0%, #0f1730 100%);
+      color:var(--text);
+      line-height:1.6;
+    }
+    a{color:var(--accent);text-decoration:none}
+    a:hover{text-decoration:underline}
+    .container{width:min(var(--max), 92%);margin:0 auto}
+    header{
+      position:sticky;top:0;z-index:10;
+      background:rgba(11,18,32,.88);
+      backdrop-filter:blur(8px);
+      border-bottom:1px solid rgba(255,255,255,.06);
+    }
+    nav{
+      display:flex;align-items:center;justify-content:space-between;
+      padding:14px 0;
+    }
+    .brand{
+      font-weight:700;
+      letter-spacing:.3px;
+      color:var(--white);
+    }
+    .nav-links{
+      display:flex;gap:18px;flex-wrap:wrap;
+      font-size:14px;
+    }
+    .hero{
+      padding:72px 0 42px;
+    }
+    .hero-grid{
+      display:grid;
+      grid-template-columns: 1.2fr .8fr;
+      gap:32px;
+      align-items:center;
+    }
+    .eyebrow{
+      display:inline-block;
+      padding:6px 12px;
+      border:1px solid var(--line);
+      border-radius:999px;
+      font-size:13px;
+      color:var(--muted);
+      margin-bottom:18px;
+      background:rgba(255,255,255,.03);
+    }
+    h1{
+      font-size:clamp(34px, 6vw, 60px);
+      line-height:1.05;
+      margin:0 0 16px;
+    }
+    .lead{
+      font-size:18px;
+      color:var(--muted);
+      max-width:760px;
+      margin-bottom:24px;
+    }
+    .cta{
+      display:flex;gap:14px;flex-wrap:wrap;
+    }
+    .btn{
+      display:inline-block;
+      padding:12px 18px;
+      border-radius:12px;
+      font-weight:700;
+      border:1px solid var(--line);
+      background:var(--soft);
+      color:var(--white);
+    }
+    .btn.primary{
+      background:var(--accent);
+      color:#08111f;
+      border-color:transparent;
+    }
+    .card{
+      background:rgba(255,255,255,.03);
+      border:1px solid rgba(255,255,255,.06);
+      border-radius:18px;
+      padding:22px;
+    }
+    .profile{
+      text-align:center;
+    }
+    .profile img{
+      width:220px;height:220px;
+      object-fit:cover;
+      border-radius:20px;
+      border:1px solid rgba(255,255,255,.08);
+      margin-bottom:14px;
+      background:#18233f;
+    }
+    .profile p{
+      margin:6px 0;
+      color:var(--muted);
+    }
+    section{
+      padding:28px 0;
+    }
+    h2{
+      font-size:28px;
+      margin:0 0 16px;
+    }
+    .grid-2{
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:22px;
+    }
+    .grid-3{
+      display:grid;
+      grid-template-columns:repeat(3,1fr);
+      gap:18px;
+    }
+    .item{
+      background:rgba(255,255,255,.03);
+      border:1px solid rgba(255,255,255,.06);
+      border-radius:16px;
+      padding:18px;
+    }
+    .item h3{
+      margin:0 0 10px;
+      font-size:18px;
+    }
+    .muted{color:var(--muted)}
+    ul.clean{
+      list-style:none;
+      padding:0;
+      margin:0;
+    }
+    ul.clean li{
+      padding:10px 0;
+      border-bottom:1px solid rgba(255,255,255,.06);
+    }
+    ul.clean li:last-child{border-bottom:none}
+    .taglist{
+      display:flex;flex-wrap:wrap;gap:10px;
+      margin-top:10px;
+    }
+    .tag{
+      padding:8px 12px;
+      border-radius:999px;
+      font-size:13px;
+      background:rgba(118,169,255,.12);
+      color:#d9e7ff;
+      border:1px solid rgba(118,169,255,.18);
+    }
+    footer{
+      padding:40px 0 60px;
+      color:var(--muted);
+      font-size:14px;
+    }
+    @media (max-width:900px){
+      .hero-grid,.grid-2,.grid-3{grid-template-columns:1fr}
+      nav{align-items:flex-start;gap:12px;flex-direction:column}
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="container">
+    <nav>
+      <div class="brand">Dagoberto Mayorca Torres</div>
+      <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#research">Research</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#teaching">Teaching</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="container hero-grid">
+    <div>
+      <div class="eyebrow">Computational Cardiology • Biomedical AI • Inverse Problems</div>
+      <h1>Researcher in Computational Cardiology and Biomedical AI</h1>
+      <p class="lead">
+        I work at the intersection of cardiac electrophysiology, biomedical signal processing,
+        inverse problems, and physics-informed machine learning. My current research focuses on
+        ECGI, cardiac signal reconstruction, multimodal time-series modeling, and clinically
+        meaningful computational methods for noninvasive cardiac assessment.
+      </p>
+      <div class="cta">
+        <a class="btn primary" href="CV_Mayorca_Torres_v6.pdf" target="_blank">Download CV</a>
+        <a class="btn" href="#contact">Get in touch</a>
+      </div>
+    </div>
+
+    <div class="card profile">
+      <img src="profile.jpg" alt="Dagoberto Mayorca Torres" />
+      <h3 style="margin:6px 0 4px;">Dagoberto Mayorca Torres</h3>
+      <p>Physical Engineer • MSc • PhD Candidate</p>
+      <p>Professor, Mechatronics Engineering Program</p>
+      <p>Universidad Mariana</p>
+    </div>
+  </div>
+</section>
+
+<section id="about">
+  <div class="container">
+    <h2>About</h2>
+    <div class="grid-2">
+      <div class="item">
+        <p>
+          I am a researcher, professor, and inventor with a background in physical engineering,
+          computational engineering, and applied artificial intelligence. My academic work spans
+          biomedical signal processing, deep learning, scientific computing, and computational modeling.
+        </p>
+        <p>
+          I am currently a PhD candidate in Information and Communication Technologies at the
+          University of Granada. My research agenda is centered on noninvasive cardiac imaging,
+          electrocardiographic imaging (ECGI), cardiac signal reconstruction, and weak physics-informed learning.
+        </p>
+      </div>
+      <div class="item">
+        <h3>Selected highlights</h3>
+        <ul class="clean">
+          <li>Professor and researcher in the Mechatronics Engineering Program at Universidad Mariana.</li>
+          <li>Academic experience in Colombia, Spain, and international online teaching environments.</li>
+          <li>Research supervision in AI, engineering, and computational methods.</li>
+          <li>Inventor of a granted patent in technology development.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="research">
+  <div class="container">
+    <h2>Research</h2>
+    <div class="grid-3">
+      <div class="item">
+        <h3>Computational Cardiology</h3>
+        <p class="muted">
+          ECGI, cardiac electrophysiology, inverse electrocardiography, and noninvasive methods
+          for assessing cardiac electrical activity.
+        </p>
+      </div>
+      <div class="item">
+        <h3>Biomedical AI</h3>
+        <p class="muted">
+          Deep learning for biosignals, multimodal learning, sequence modeling, and clinically
+          grounded machine learning for health applications.
+        </p>
+      </div>
+      <div class="item">
+        <h3>Physics-Informed Modeling</h3>
+        <p class="muted">
+          Weak physics-informed learning, geometry-aware methods, and robust reconstruction under
+          data scarcity and ill-posed conditions.
+        </p>
+      </div>
+    </div>
+
+    <div class="taglist">
+      <span class="tag">ECGI</span>
+      <span class="tag">Cardiac Signals</span>
+      <span class="tag">Biomedical Signal Processing</span>
+      <span class="tag">Inverse Problems</span>
+      <span class="tag">Deep Learning</span>
+      <span class="tag">Multimodal Time Series</span>
+      <span class="tag">Physics-Informed AI</span>
+    </div>
+  </div>
+</section>
+
+<section id="experience">
+  <div class="container">
+    <h2>Academic & Professional Experience</h2>
+    <div class="grid-2">
+      <div class="item">
+        <h3>Current academic profile</h3>
+        <ul class="clean">
+          <li><strong>Professor and Researcher</strong> — Mechatronics Engineering Program, Universidad Mariana</li>
+          <li><strong>PhD Candidate</strong> — Information and Communication Technologies, University of Granada</li>
+          <li><strong>Lecturer / Content Contributor</strong> — International academic programs in AI and Data Science</li>
+        </ul>
+      </div>
+      <div class="item">
+        <h3>Broader experience</h3>
+        <p class="muted">
+          My trajectory combines higher education, research supervision, content development,
+          scientific programming, mathematical modeling, and technology-oriented R&D. I have worked
+          across academic and applied environments, including engineering, data science, biomechanics,
+          embedded systems, and biomedical computing.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="projects">
+  <div class="container">
+    <h2>Selected Projects</h2>
+    <div class="grid-2">
+      <div class="item">
+        <h3>3D Cardiac Health Analysis</h3>
+        <p class="muted">
+          Research project on cardiac health analysis using 3D models of the electrical activity
+          of the heart through electrocardiographic potential mapping.
+        </p>
+      </div>
+      <div class="item">
+        <h3>Arrhythmia Detection with Machine Learning</h3>
+        <p class="muted">
+          Application of machine learning techniques for arrhythmia detection in ambulatory
+          electrocardiographic recordings.
+        </p>
+      </div>
+      <div class="item">
+        <h3>Biomedical Signal Acquisition and Processing</h3>
+        <p class="muted">
+          Development of signal acquisition and processing systems, including EMG-related hardware
+          and computational tools.
+        </p>
+      </div>
+      <div class="item">
+        <h3>Technology Development</h3>
+        <p class="muted">
+          Experience in mathematical modeling, scientific software, image processing, and embedded
+          systems for engineering and industrial applications.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="teaching">
+  <div class="container">
+    <h2>Teaching & Supervision</h2>
+    <div class="grid-2">
+      <div class="item">
+        <h3>Teaching areas</h3>
+        <ul class="clean">
+          <li>Machine Learning</li>
+          <li>Image Processing</li>
+          <li>Advanced Programming</li>
+          <li>Research Methods</li>
+          <li>Software Engineering</li>
+          <li>Physical Sciences and Mathematics</li>
+        </ul>
+      </div>
+      <div class="item">
+        <h3>Mentoring and academic leadership</h3>
+        <p class="muted">
+          I have supervised undergraduate theses and graduate dissertations in artificial intelligence,
+          computational engineering, biomedical applications, and applied modeling. My work also includes
+          course design, academic content development, and interdisciplinary mentoring.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <h2>Innovation</h2>
+    <div class="item">
+      <h3>Patent</h3>
+      <p class="muted">
+        Inventor of a granted patent related to technology for teaching kinematics, reflecting an
+        interest in practical problem solving, technology transfer, and applied innovation.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="container">
+    <h2>Contact</h2>
+    <div class="grid-2">
+      <div class="item">
+        <p><strong>Email:</strong> <a href="mailto:dmayorca@umariana.edu.co">dmayorca@umariana.edu.co</a></p>
+        <p><strong>Institution:</strong> Universidad Mariana</p>
+        <p><strong>Location:</strong> Pasto, Colombia</p>
+      </div>
+      <div class="item">
+        <p><strong>Links</strong></p>
+        <ul class="clean">
+          <li><a href="#" target="_blank">Google Scholar</a></li>
+          <li><a href="#" target="_blank">ORCID</a></li>
+          <li><a href="#" target="_blank">LinkedIn</a></li>
+          <li><a href="CV_Mayorca_Torres_v6.pdf" target="_blank">Download full CV</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    © 2026 Dagoberto Mayorca Torres — Personal academic website.
+  </div>
+</footer>
+
+</body>
+</html>
